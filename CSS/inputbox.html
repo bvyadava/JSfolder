@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            #dd{
+                position:relative;
+                margin:10px;
+            }
+            #d1{
+                padding: 10px;
+                background-color: rgba(0, 0, 0, 0.01);
+                border-bottom: 1px solid;
+            }
+            #d2{
+                position: absolute;
+                top:10px;
+                left:5px;
+                padding: 5px;
+                z-index: -2;
+
+            }
+            #d1:focus+label{
+                top: -10px;
+                left: 5px;
+                background-color: white;
+                transition: 0.7s;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="dd"> 
+            <input id="d1" type="text">
+            <label id="d2">Enter your name</label>
+        </div>
+    </body>
+</html>

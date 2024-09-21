@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            .abc{
+                width: 200px;
+                border: 1px solid;
+            }
+            .Leftbox{
+                width: 25%;
+                height:100px;
+                border: 20px solid red;
+            }
+            .Rightbox{
+                width: 60%;
+                height: 100px;
+                border: 20px solid green;
+            }
+            .Middlebox{
+                width: 40%;
+                height: 100px;
+                border: 20px solid blue;
+            }
+            .container{
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Imagine we have a container with several items inside, and we want those items to wrap to the next line if they can't fit within the width of the container. Without flex-wrap, all the items would be squeezed into a single row. By using flex-wrap: wrap, the items will move onto a new line when necessary.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content:safe;">
+            <div class="abc">Section1</div>
+            <div class="abc">Section2</div>
+            <div class="abc">Section3</div>
+            <div class="abc">Section3</div>
+            <div class="abc">Section3</div>
+            <div class="abc">Section3</div>
+        </div>
+        <div style="height: 300px;width: 300px; border: 2px solid red; display: flex; justify-content: center; align-items:center;">
+            <div style="border: 2px solid; height: 50px; ">Inside red div </div>
+        </div>
+        <div class="container">
+            <div class="Leftbox"></div>
+            <div class="Rightbox"></div>
+            <div class="Middlebox"></div>
+        </div>
+    </body>
+</html>
