@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin: 0px;
+            }
+            #d1{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+            #d1 li{
+                width: 15%;
+                height: 100px;
+                border: 2px solid;
+                margin:5px;
+                list-style: none;                
+             }
+             #d1 li:nth-child(1) {
+            background-color: #ff9999; 
+                }
+         #d1 li:nth-child(2) {
+            background-color: #99ccff; 
+        }
+        #d1 li:nth-child(3) {
+            background-color: #99ff99; 
+        }
+        #d1 li:nth-child(4) {
+            background-color: #ffcc99; 
+        }
+        #d1 li:nth-child(5) {
+            background-color: #ffccff; 
+        }
+        #d1 li:nth-child(6) {
+            background-color: #ffff99; 
+        }
+        #d1 li:nth-child(7) {
+            background-color: #cc99ff; 
+        }
+        #d1 li:nth-child(8) {
+            background-color: #99ffcc; 
+        }
+        #d1 li:nth-child(9) {
+            background-color: #ff9966; 
+        }
+             @media  screen and (max-width:1400) {
+                #d1 li{
+                    width: 15%;
+                }
+            }
+            @media  screen and (max-width:1399px) and (min-width:1200px) {
+                #d1 li{
+                    width: 20%;
+                }
+            }
+            @media  screen and (max-width:1199px) and (min-width:992px) {
+                #d1 li{
+                    width: 25%;
+                }
+            }
+            @media  screen and (max-width:991px) and (min-width:768px){
+                #d1 li{
+                    width: 45%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <ul id="d1">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </body>
+</html>
